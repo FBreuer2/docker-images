@@ -40,12 +40,13 @@ EXPOSE 80
 
 
 #############################################################################################################
-#                               disable service  (ssh)                                                      #
+#                               configure service  (ssh)                                                    #
 #                                                                                                           #
 #############################################################################################################
-RUN apt-get -y remove openssh-server
-RUN rm -rf /etc/service/sshd /etc/my_init.d/00_regen_ssh_host_keys.sh
-
+ADD docker_root /
+RUN cat /tmp/password |chpasswd
+RUN rm -rf /tmp/password
+EXPOSE 22
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 

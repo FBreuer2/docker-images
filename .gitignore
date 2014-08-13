@@ -1,2 +1,11 @@
 *~
-ssl/*
+
+
+###################################
+## dirs with generated artifacts ##
+###################################
+
+
+# owncloud decompressed source dir 
+*/owncloud/*
+*/html/*
