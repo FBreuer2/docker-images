@@ -1,0 +1,2 @@
+#!/bin/sh
+exec apache2ctl start>>/var/log/apache2.log 2>&1
