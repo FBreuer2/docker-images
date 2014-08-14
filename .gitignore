@@ -1,8 +1,11 @@
+###################################
+## unwanted file artefacts       ##
+###################################
 *~
-
+*.tar.bz2
 
 ###################################
-## dirs with generated artifacts ##
+## dirs with generated artefacts ##
 ###################################
 
 

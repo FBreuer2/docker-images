@@ -35,3 +35,5 @@ echo "</VirtualHost>" >> "$OWNCLOUD_CONFIG_FILE"
 
 cp "$OWNCLOUD_CONFIG_FILE" docker_root/etc/apache2/sites-enabled/
 cp "$OWNCLOUD_CONFIG_FILE" docker_root/etc/apache2/sites-available/
+
+rm "$OWNCLOUD_CONFIG_FILE"

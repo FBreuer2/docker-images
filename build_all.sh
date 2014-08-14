@@ -3,32 +3,19 @@
 # base image (http)
 ###
 cd apache2_http
-sh build.sh
+./build.sh
 cd ..
 
 ##
 # base image (http/ssh)
 ###
 cd apache2_http_with_ssh
-sh build.sh
+./build.sh
 cd ..
 
 ##
-# owncloud (http)
+# owncloud (http) and owncloud (http/ssh)
 ###
-
-OWNCLOUD_LINK='https://download.owncloud.org/community/owncloud-7.0.1.tar.bz2'
-
-cd apache2_http_owncloud
-sh build.sh
-cd ..
-
-##
-# owncloud (http/ssh)
-###
-
-cd apache2_http_owncloud_with_ssh
-sh build.sh
-cd ..
-
-
+cd apache2_owncloud
+./build.sh
+./build.sh with_ssh
