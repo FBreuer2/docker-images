@@ -10,5 +10,6 @@
 
 
 # owncloud decompressed source dir 
+*/docker_root/*
 */owncloud/*
 */html/*

@@ -36,7 +36,7 @@ export OWNCLOUD_SERVER_ADMIN_DOCKER=""
 
 # download owncloud if we don't have a backup in the owncloud directory
 if [ ! -d "html" ]; then
-    wget -q -c "$OWNCLOUD_LINK"
+    wget -c "$OWNCLOUD_LINK"
     tar --bzip2 --atime-preserve -xf owncloud-7*
     mv -f owncloud html
 fi
