@@ -40,7 +40,7 @@ will for example build the clu/apache2_http and clu/apache2_http_owncloud image
 ### HTTP server and SSH server with owncloud
 
 ```console
-cd apache2_http
+$ cd apache2_http
 $ ./build.sh
 $ cd ..
 $ cd apache2_owncloud
